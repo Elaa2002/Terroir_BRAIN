@@ -1,0 +1,1979 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Terroir Brain API
+meta:
+  id: wrk_d7baa7015ff748a1902325e52b07be7d
+  created: 1767437736254
+  modified: 1767437736254
+  description: ""
+collection:
+  - url: "{{ _.base_url }}/intelligence/global-mashup"
+    name: Global mashup
+    meta:
+      id: req_80a2845cd95b40e398e3ed6859fd948e
+      created: 1768323950770
+      modified: 1768325111300
+      isPrivate: false
+      description: ""
+      sortKey: -1768323950770
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.2.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: Intelligence Endpoints
+    meta:
+      id: fld_1fcbca55295145ebae97f6205f1a06dc
+      created: 1704844800000
+      modified: 1704844800000
+      sortKey: -1704844800000
+      description: Advanced AI-powered analytics and optimization endpoints
+    children:
+      - url: "{{ _.base_url
+          }}/intelligence/procurement-optimizer?start_date=2025-01-13&end_date=\
+          2025-01-16"
+        name: 1. Procurement Optimizer
+        meta:
+          id: req_279c7d1031c74221a566d0c3e0c628a2
+          created: 1704844800000
+          modified: 1768317117749
+          isPrivate: false
+          description: Generate optimized shopping list with bulk discounts, carbon
+            footprint, and waste risk
+          sortKey: -1704844800000
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "guests": [
+                {
+                  "nationality": "FRA",
+                  "count": 10,
+                  "dates": ["2025-01-13", "2025-01-14", "2025-01-16"]
+                },
+                {
+                  "nationality": "DEU",
+                  "count": 5,
+                  "dates": ["2025-01-13", "2025-01-14"]
+                },
+                {
+                  "nationality": "USA",
+                  "count": 8,
+                  "dates": ["2025-01-13", "2025-01-14", "2025-01-15"]
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/kitchen-dashboard"
+        name: 4. Kitchen Dashboard
+        meta:
+          id: req_4bc06f6e4f564da5b4821a3d4acfed37
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Real-time prep requirements, alerts, and tomorrow's forecast
+          sortKey: -1704844500000
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/waste-impact-simulator"
+        name: 3c. Waste Simulator - Weather Adjustment
+        meta:
+          id: req_61decd2312be4bf5a120805ddae997f5
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Simulate weather-based order adjustments
+          sortKey: -1704844580000
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "strategy": "weather_adjustment",
+              "parameters": {
+                "adjustment_factor": 0.15
+              },
+              "time_horizon_days": 30
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/seasonal-optimizer?month=1"
+        name: 5a. Seasonal Optimizer - January
+        meta:
+          id: req_7f4ffe72ca3046889f85a839c83453bf
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Best dishes for January with sustainability scores
+          sortKey: -1704844400000
+        method: GET
+        parameters:
+          - name: month
+            value: "1"
+            description: Month number (1-12)
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/waste-impact-simulator"
+        name: 3a. Waste Simulator - Reduce Bread
+        meta:
+          id: req_954095253d584e958cd07c1ba59ed38b
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Simulate reducing bread orders by percentage
+          sortKey: -1704844600000
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "strategy": "reduce_bread_by_percentage",
+              "parameters": {
+                "percentage": 20
+              },
+              "time_horizon_days": 30
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/cultural-insights"
+        name: 7. Cultural Insights Deep Dive
+        meta:
+          id: req_adfbe680d52e468aab4ec6858a216005
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Preference heatmap and nationality compatibility analysis
+          sortKey: -1704844200000
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/nationality-comparison?occupancy=10"
+        name: 2. Nationality Comparison
+        meta:
+          id: req_ae580311f92348f0b30cc6c834dbe790
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Compare ingredient demand and costs across all nationalities
+          sortKey: -1704844700000
+        method: GET
+        parameters:
+          - name: occupancy
+            value: "10"
+            description: Number of guests to compare
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/cost-benefit-analysis?days=30"
+        name: 6a. Cost-Benefit Analysis - 30 Days
+        meta:
+          id: req_b203f9cf1d2140fa81cea9385f495bed
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: ROI and savings analysis for last 30 days
+          sortKey: -1704844300000
+        method: GET
+        parameters:
+          - name: days
+            value: "30"
+            description: Analysis period in days
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/cost-benefit-analysis?days=90"
+        name: 6b. Cost-Benefit Analysis - 90 Days
+        meta:
+          id: req_c610c80bd0504944a3923ddd7cdf8a49
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: ROI and savings analysis for last 90 days
+          sortKey: -1704844290000
+        method: GET
+        parameters:
+          - name: days
+            value: "90"
+            description: Analysis period in days
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/seasonal-optimizer?month=7"
+        name: 5b. Seasonal Optimizer - July
+        meta:
+          id: req_c77c4e9ee01c4082858476542be91202
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Best dishes for July with sustainability scores
+          sortKey: -1704844390000
+        method: GET
+        parameters:
+          - name: month
+            value: "7"
+            description: Month number (1-12)
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.base_url }}/intelligence/waste-impact-simulator"
+        name: 3b. Waste Simulator - Flight Tracking
+        meta:
+          id: req_e22adb430f464fb4a7f98045751e144e
+          created: 1704844800000
+          modified: 1704844800000
+          isPrivate: false
+          description: Simulate implementing flight delay tracking
+          sortKey: -1704844590000
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "strategy": "implement_flight_tracking",
+              "parameters": {
+                "estimated_delay_reduction": 0.6
+              },
+              "time_horizon_days": 30
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: "CRUD "
+    meta:
+      id: fld_fe6fdbb0c3da4a1485bd627b44168b75
+      created: 1767559590611
+      modified: 1767559612633
+      sortKey: -1767498120424
+      description: ""
+    children:
+      - name: Auth
+        meta:
+          id: fld_2561c17f120d4555aab0fcc064407ab7
+          created: 1767437974719
+          modified: 1767559654492
+          sortKey: -1767559638452
+          description: ""
+        children:
+          - url: "{{ _.auth_url }}/auth/me"
+            name: Get Current User
+            meta:
+              id: req_ceba1272e0bf4d54a18f1938eb7c5ff8
+              created: 1767437745493
+              modified: 1768659317515
+              isPrivate: false
+              description: ""
+              sortKey: -1767439119600.25
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4Iiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzY4NjYxMDgxLCJ0eXBlIjoiYWNjZXNzIiwianRpIjoiZjcwNWE1NWMtODVmYy00NmVkLTlkODctMmVhYWViZGI4OTljIn0.XkjDle_HMTF9obJyCkopDaS6LbREYUCnV6t-sgAp9R0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/login"
+            name: Login User
+            meta:
+              id: req_b5d4c5a968064d2ab719bb143c21a72f
+              created: 1767438171541
+              modified: 1768659407257
+              isPrivate: false
+              description: ""
+              sortKey: -1768112675712.25
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "email": "ella.marc.o.tn@gmail.com",
+                  "password": "newsecurepass123",
+                  "role": "admin"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/register"
+            name: Register User
+            meta:
+              id: req_06d41fa6590447758ca9a73d813c2d3e
+              created: 1767438953726
+              modified: 1768659414082
+              isPrivate: false
+              description: ""
+              sortKey: -1768112687168.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "email": "ella.marc.o.tn@gmail.com",
+                  "password": "newsecurepass123",
+                  "role": "admin"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/refresh"
+            name: Refresh Token
+            meta:
+              id: req_6c3cc5f11dda462ebb21d43f7f143219
+              created: 1767439011211
+              modified: 1768314165898
+              isPrivate: false
+              description: ""
+              sortKey: -1767439119534.625
+            method: POST
+            body:
+              mimeType: application/json
+              text: '{ "refresh_token":
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1IiwiZXhwIjoxNzY4OTE4ODk2LCJ0eXBlIjoicmVmcmVzaCIsImp0aSI6ImI1MTdlMDgzLTVmMWQtNGVmZi1iZWZlLTg3YWMxNDkzMzk0YSJ9.baUxnnVSoB920uc9bC09AfZzkQZHtRRAD4xyQ-lOujg"
+                }'
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/check-token"
+            name: Check Token
+            meta:
+              id: req_9baefb51cf53409e8482e414633716be
+              created: 1767444835782
+              modified: 1768315712168
+              isPrivate: false
+              description: ""
+              sortKey: -1767439119469
+            method: HEAD
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2Iiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzY4MzE3NDc4LCJ0eXBlIjoiYWNjZXNzIiwianRpIjoiNmNkNzQ2YTktZTljYS00ZDU3LWFlMmYtNmVkMWY3NWNhNTRmIn0.bdgMmoqa5xkHO7UxkoVGQKQxCTHeQTygosp7JwhPJU0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/logout"
+            name: Logout
+            meta:
+              id: req_a95b5c0d0291488ebb894c1a822211d9
+              created: 1768112458892
+              modified: 1768659464111
+              isPrivate: false
+              description: ""
+              sortKey: -1767439119501.8125
+            method: POST
+            headers:
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4Iiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzY4NjYxMDgxLCJ0eXBlIjoiYWNjZXNzIiwianRpIjoiZjcwNWE1NWMtODVmYy00NmVkLTlkODctMmVhYWViZGI4OTljIn0.XkjDle_HMTF9obJyCkopDaS6LbREYUCnV6t-sgAp9R0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/forgot-password"
+            name: Forgot Password
+            meta:
+              id: req_44c5494987e742b982bb46a0f36d2a20
+              created: 1768112615590
+              modified: 1768659336213
+              isPrivate: false
+              description: ""
+              sortKey: -1767439119419
+            method: POST
+            body:
+              mimeType: application/json
+              text: '{"email": "ella.marc.o.tn@gmail.com"}'
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/auth/reset-password"
+            name: Reset Password
+            meta:
+              id: req_eab1aab6c64449c197e0000a2549d24f
+              created: 1768112664256
+              modified: 1768659393246
+              isPrivate: false
+              description: ""
+              sortKey: -1767439119369
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                
+                {
+                  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlbGxhLm1hcmMuby50bkBnbWFpbC5jb20iLCJleHAiOjE3Njg2NjI5Mzd9.ye0oCWgmVo0fIzmtnFwsA3hMGwdu0DeGUUqrZJKNEow",
+                  "new_password": "newsecurepass123"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.auth_url }}/health"
+            name: "Health Check "
+            meta:
+              id: req_c9de1dcb5f19408b879da9a605490e24
+              created: 1768112710081
+              modified: 1768661137421
+              isPrivate: false
+              description: ""
+              sortKey: -1768112710081
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Guests
+        meta:
+          id: fld_af06cac7a8ea4eeaa25a4a29484664a2
+          created: 1767437986791
+          modified: 1767559714175
+          sortKey: -1767559638427
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/guests/"
+            name: List Guests
+            meta:
+              id: req_572bd6e68e784db48f5b32480320dea8
+              created: 1767439163614
+              modified: 1767439360031
+              isPrivate: false
+              description: ""
+              sortKey: -1767439238359
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/guests/2"
+            name: Get Guest
+            meta:
+              id: req_4dc0669e061340f9a98be111862c7cb8
+              created: 1767439170604
+              modified: 1768659684511
+              isPrivate: false
+              description: ""
+              sortKey: -1767439238284
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/guests/"
+            name: Create Guest
+            meta:
+              id: req_61f09836db624615bb773dff62b8cb7d
+              created: 1767439177130
+              modified: 1768315767044
+              isPrivate: false
+              description: ""
+              sortKey: -1767439238309
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                { "name": "to be deleted Doe4", 
+                 "email": "jane466@example.com", 
+                 "nationality_id": 1, 
+                 "dietary_restrictions": "Vegan" }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/guests/2"
+            name: Update Guest
+            meta:
+              id: req_45d03ed06ff744148cd2ff8a49797399
+              created: 1767439231444
+              modified: 1768659673275
+              isPrivate: false
+              description: ""
+              sortKey: -1767439238271.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: '{"nationality_id": 3}'
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/guests/1"
+            name: Delete Guest
+            meta:
+              id: req_484e892f191f4e22949fa3089978f2b3
+              created: 1767439238259
+              modified: 1768659659854
+              isPrivate: false
+              description: ""
+              sortKey: -1767439238259
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Nationalities
+        meta:
+          id: fld_06a5d00867ff4c95b9bd02fbbd2da59c
+          created: 1767438006193
+          modified: 1767559717700
+          sortKey: -1767559638414.5
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/nationalities/"
+            name: Create Nationality
+            meta:
+              id: req_90e2f7732a7545d297a3a354862db5fa
+              created: 1767439545993
+              modified: 1768315987618
+              isPrivate: false
+              description: ""
+              sortKey: -1767444993622
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                
+                {
+                	"code": "IT",
+                	"name": "Italian",
+                	"bread_preference": 1.0,
+                	"dairy_preference": 0.8,
+                	"spice_tolerance": 0.3,
+                	"breakfast_style": "Sweet",
+                	"id": 2
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/nationalities/"
+            name: List Nationalities
+            meta:
+              id: req_c6a26ffec485486c90570f79af333180
+              created: 1767439551805
+              modified: 1767447726155
+              isPrivate: false
+              description: ""
+              sortKey: -1767444993697
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/nationalities/2"
+            name: Retrieve Nationality
+            meta:
+              id: req_96e37a48f9e34e19900d40d17173e5c8
+              created: 1767444984588
+              modified: 1767540659840
+              isPrivate: false
+              description: ""
+              sortKey: -1767444993647
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/nationalities/2"
+            name: Update Nationality
+            meta:
+              id: req_e4d631c698be42e587150681b5c3b59a
+              created: 1767444993597
+              modified: 1768316011502
+              isPrivate: false
+              description: ""
+              sortKey: -1767444993597
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		
+                		"spice_tolerance": 0.5
+                		
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/nationalities/12"
+            name: Delete Nationality
+            meta:
+              id: req_445543c87f5e4c989601a9c8e9ab83c3
+              created: 1767448774853
+              modified: 1768049481648
+              isPrivate: false
+              description: ""
+              sortKey: -1767444993497
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Suppliers
+        meta:
+          id: fld_7fed6169831e4eaf8ae6bbbdef450d1a
+          created: 1767438028822
+          modified: 1767559745586
+          sortKey: -1767559638402.1953
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/suppliers/{id}"
+            name: Delete Supplier
+            meta:
+              id: req_3ac322b85b8b4cf19fdf3c572f5ce086
+              created: 1767446878102
+              modified: 1767447190571
+              isPrivate: false
+              description: ""
+              sortKey: -1767446878102
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/suppliers/1"
+            name: Update Supplier
+            meta:
+              id: req_ef5dd51a65ab454b83c4fa853fd2e55f
+              created: 1767446883785
+              modified: 1767538167330
+              isPrivate: false
+              description: ""
+              sortKey: -1767446883785
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "name": "Boulangerie Sidi Bou Said",
+                  
+                  "phone": "+216 71 123 457"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/suppliers/2"
+            name: Get Supplier
+            meta:
+              id: req_d09e4a6a07ea474db9b0c012f385561d
+              created: 1767446889262
+              modified: 1767536663488
+              isPrivate: false
+              description: ""
+              sortKey: -1767446889262
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/suppliers"
+            name: Create Supplier
+            meta:
+              id: req_d43cce8ce995418aaa5991fa19a718bf
+              created: 1767446893059
+              modified: 1767536649049
+              isPrivate: false
+              description: ""
+              sortKey: -1767446893059
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                { "name": "épicerie Ben Mahmoud", 
+                 "location": "Menzel Temime" }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/suppliers"
+            name: List Suppliers
+            meta:
+              id: req_8498f30af8d84391840f16a4785b9f77
+              created: 1767446916544
+              modified: 1767447111771
+              isPrivate: false
+              description: ""
+              sortKey: -1767446916544
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Ingredients
+        meta:
+          id: fld_72cdea2810504f4baf403c6aee4e7cd1
+          created: 1767438042171
+          modified: 1767559743166
+          sortKey: -1767559638402.3906
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/ingredients/1"
+            name: Check Ingredients
+            meta:
+              id: req_5bdddc6cc54a44d8b6a622279100057a
+              created: 1767445291232
+              modified: 1767533995388
+              isPrivate: false
+              description: ""
+              sortKey: -1767445291232
+            method: HEAD
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/ingredients"
+            name: Get Ingredients
+            meta:
+              id: req_b20d00249185478d8e8c8cbe95ee4c51
+              created: 1767445294538
+              modified: 1767445398601
+              isPrivate: false
+              description: ""
+              sortKey: -1767445294538
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/ingredients"
+            name: List Ingredients
+            meta:
+              id: req_63f1f55d94144662a15cb66f93cc0b22
+              created: 1767445298701
+              modified: 1767445382418
+              isPrivate: false
+              description: ""
+              sortKey: -1767445298701
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Dishes
+        meta:
+          id: fld_20fc562ed8a240488abe0bdb92c16a46
+          created: 1767438052265
+          modified: 1767559728898
+          sortKey: -1767559638402.7812
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/dishes/4"
+            name: Get Dish
+            meta:
+              id: req_176ac5df57fe48239812dec8aa1d5ea3
+              created: 1767445052670
+              modified: 1767533705446
+              isPrivate: false
+              description: ""
+              sortKey: -1767445052670
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/dishes"
+            name: Create Dish
+            meta:
+              id: req_07ada81895024e90a98a7f98ed49f8cd
+              created: 1767445056880
+              modified: 1767530874772
+              isPrivate: false
+              description: ""
+              sortKey: -1767445056880
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                { "name": "Couscous", 
+                 "ingredients": [1,2], 
+                 "meal_type": "Lunch" }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/dishes"
+            name: List Dishes
+            meta:
+              id: req_8e68c46b22e84d06844356fe2c7d2e12
+              created: 1767445060684
+              modified: 1767445208272
+              isPrivate: false
+              description: ""
+              sortKey: -1767445060684
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/dishes/4"
+            name: Update Dish
+            meta:
+              id: req_2a7288257dc648048a07203887f9db02
+              created: 1767531751086
+              modified: 1767533688217
+              isPrivate: false
+              description: ""
+              sortKey: -1767445052570
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Updated Couscous",
+                  "name_ar": "كسكسي معدل",
+                  "description": "Traditional Tunisian dish updated",
+                  "is_traditional": true,
+                  "cuisine_type": "Tunisian",
+                  "meal_type": "Lunch"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.2.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Reservations
+        meta:
+          id: fld_f75223e0cf564872be5cc0570b17db04
+          created: 1767438065019
+          modified: 1767559726372
+          sortKey: -1767559638403.5625
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/reservations/1"
+            name: Update Reservation
+            meta:
+              id: req_e6eac235940545b7b82e6443c3d07fc6
+              created: 1767445450891
+              modified: 1767533755000
+              isPrivate: false
+              description: ""
+              sortKey: -1767445450891
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "guest_id": 1,
+                  "dish_id": 1,
+                  "date": "2026-01-05",
+                  "quantity": 4,
+                  "notes": "Updated"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/reservations/1"
+            name: Get Reservation
+            meta:
+              id: req_1b9d25f47dbb462bab610921a3d9d134
+              created: 1767445454218
+              modified: 1767529079195
+              isPrivate: false
+              description: ""
+              sortKey: -1767445454218
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/reservations"
+            name: Create Reservation
+            meta:
+              id: req_2faa7dfed35d4c9cab5447f3c9b581c9
+              created: 1767445457533
+              modified: 1767521631072
+              isPrivate: false
+              description: ""
+              sortKey: -1767445457533
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                    "guest_id": 1,
+                    "dish_id": 2,        
+                    "date": "2026-01-10",  
+                    "check_in": "2026-01-09",
+                    "check_out": "2026-01-15"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/reservations"
+            name: List Reservations
+            meta:
+              id: req_5489c8bdf6e64dae932eee66f48b0ef8
+              created: 1767445460945
+              modified: 1767445540334
+              isPrivate: false
+              description: ""
+              sortKey: -1767445460945
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: WasteLogs
+        meta:
+          id: fld_bca755d4f2824c0dbea9152a89e2a24d
+          created: 1767438079576
+          modified: 1767559723770
+          sortKey: -1767559638405.125
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/waste-logs"
+            name: Create Waste Log
+            meta:
+              id: req_7040d5a9dd164ddba05e239e564f7668
+              created: 1767445650358
+              modified: 1767519799198
+              isPrivate: false
+              description: ""
+              sortKey: -1767445650358
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "ingredient_id": 1,
+                  "quantity_kg": 5.0,
+                  "date": "2026-01-04",
+                  "reason": "Expired",
+                  "occupancy_on_date": 12,
+                  "weather_condition": "Sunny"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/waste-logs"
+            name: List Waste Logs
+            meta:
+              id: req_b060526f9bf844c2946e9750655a0c08
+              created: 1767445655373
+              modified: 1767519727328
+              isPrivate: false
+              description: ""
+              sortKey: -1767445655373
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: DisruptionEvents
+        meta:
+          id: fld_2381700f4f9846cbb34705c2a1ea1170
+          created: 1767438103929
+          modified: 1767559721172
+          sortKey: -1767559638408.25
+          description: ""
+        children:
+          - url: "{{ _.base_url }}/disruptions/1"
+            name: Update Event
+            meta:
+              id: req_d093faad2a4f4954a5fa07c4eb4ad4a8
+              created: 1767445755803
+              modified: 1767517834708
+              isPrivate: false
+              description: ""
+              sortKey: -1767445755803
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: '{ "severity": 2}'
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/disruptions/"
+            name: Create Event
+            meta:
+              id: req_180e6a6bc92a4d1f8a11eb104d7baa4d
+              created: 1767445761454
+              modified: 1767553781456
+              isPrivate: false
+              description: ""
+              sortKey: -1767445761454
+            method: POST
+            body:
+              mimeType: application/json
+              text: >+
+                {
+                  "title": "Power Outage",
+                  "event_type": "Infrastructure",
+                  "severity": 7.5,
+                  "occurred_at": "2026-01-05T14:30:00",
+                  "description": "Unexpected power outage affecting the main plant."
+                }
+
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.base_url }}/disruptions/"
+            name: List Events
+            meta:
+              id: req_64fc36693dd946b7b46346499c3986f7
+              created: 1767445765593
+              modified: 1767470852975
+              isPrivate: false
+              description: ""
+              sortKey: -1767445765593
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: FORECAST
+    meta:
+      id: fld_6578040d1e9a42c184a489eec58a21cc
+      created: 1767559763608
+      modified: 1767559845898
+      sortKey: -1767559763608
+      description: ""
+    children:
+      - name: Forecast Endpoints
+        meta:
+          id: fld_27588fc7b13242fba4e2f6adce9216d9
+          created: 1767558103113
+          modified: 1767559839265
+          sortKey: -1767559774596.5
+          description: Ingredient demand forecasting with cultural intelligence
+        children:
+          - url: http://localhost:8000/forecast/?occupancy=15&nationality=FRA
+            name: Forecast - French Guests
+            meta:
+              id: req_954364a082b7496e8408e1c185580c5c
+              created: 1767558103119
+              modified: 1767558103119
+              isPrivate: false
+              description: Predict ingredient demand for 15 French guests
+              sortKey: -1767558103119
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/forecast/?occupancy=15&nationality=DEU
+            name: Forecast - German Guests
+            meta:
+              id: req_766cd9a245df4dfcaf059a85046eec5e
+              created: 1767558103124
+              modified: 1767558103124
+              isPrivate: false
+              description: Germans have higher bread preference (1.5)
+              sortKey: -1767558103124
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/forecast/?occupancy=15&nationality=TUN
+            name: Forecast - Tunisian Guests
+            meta:
+              id: req_df5e7b275de44c968ec9acd4e8514c6d
+              created: 1767558103130
+              modified: 1767558103130
+              isPrivate: false
+              description: Tunisians have highest spice tolerance (1.5)
+              sortKey: -1767558103130
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/forecast/?occupancy=15&nationality=FRA&date=2025-07-15
+            name: Forecast - With Heatwave Disruption
+            meta:
+              id: req_0f3b7f9804014bccbb30ccf335aa045d
+              created: 1767558103136
+              modified: 1767558103136
+              isPrivate: false
+              description: July 15 has heatwave (severity=0.8) reducing demand by 20%
+              sortKey: -1767558103136
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/forecast/?occupancy=10
+            name: Forecast - Default Nationality
+            meta:
+              id: req_190bb946c0b8424a884358e603dff371
+              created: 1767558103142
+              modified: 1767558103142
+              isPrivate: false
+              description: Tests fallback to French nationality
+              sortKey: -1767558103142
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Menu Generation
+        meta:
+          id: fld_80d2cb60112e4da5958a9852f5f90717
+          created: 1767558103147
+          modified: 1767559832474
+          sortKey: -1767559774609
+          description: Culturally-appropriate seasonal menu suggestions
+        children:
+          - url: http://localhost:8000/menu/?month=1&nationality=FRA
+            name: Menu - January (French)
+            meta:
+              id: req_766ed85414d64d4ea10bfed74b255725
+              created: 1767558103152
+              modified: 1767558103152
+              isPrivate: false
+              description: Winter menu with French cultural notes
+              sortKey: -1767558103152
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/menu/?month=7
+            name: Menu - July (Summer)
+            meta:
+              id: req_31b222c3ac2347188b2b26cfa48662a7
+              created: 1767558103158
+              modified: 1767558103158
+              isPrivate: false
+              description: Summer seasonal menu, all nationalities
+              sortKey: -1767558103158
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/menu/?month=4&nationality=ITA
+            name: Menu - April (Spring)
+            meta:
+              id: req_f4092f6ff667499bbcc754c3a01e89ac
+              created: 1767558103164
+              modified: 1767558103164
+              isPrivate: false
+              description: Spring menu for Italian guests
+              sortKey: -1767558103164
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/menu/?month=13
+            name: Menu - Invalid Month (Error Test)
+            meta:
+              id: req_ce5f3abf75e54f68b6b4130c518c7b7d
+              created: 1767558103169
+              modified: 1768075439094
+              isPrivate: false
+              description: Should return 400 Bad Request
+              sortKey: -1767558103169
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Waste Analysis
+        meta:
+          id: fld_9a7a147db0414949bb17268f96a462f3
+          created: 1767558103175
+          modified: 1767559825797
+          sortKey: -1767559774634
+          description: Waste pattern analysis and actionable recommendations
+        children:
+          - url: http://localhost:8000/waste-analysis/?days=30
+            name: Waste Analysis - 30 Days
+            meta:
+              id: req_f3da861ee9f848f29f8e6a225d6bc700
+              created: 1767558103180
+              modified: 1767558103180
+              isPrivate: false
+              description: Full month waste analysis with recommendations
+              sortKey: -1767558103180
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/waste-analysis/?days=7
+            name: Waste Analysis - 7 Days
+            meta:
+              id: req_e13f212b2c34463fb08f5dd5a89884db
+              created: 1767558103186
+              modified: 1767558103186
+              isPrivate: false
+              description: Recent week waste analysis
+              sortKey: -1767558103186
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/waste-analysis/trends?days=30
+            name: Waste Trends - 30 Days
+            meta:
+              id: req_1d5c8cd4fbd74fa9a7ba6a19398904cb
+              created: 1767558103191
+              modified: 1767558103191
+              isPrivate: false
+              description: Weekly waste trends (increasing/decreasing)
+              sortKey: -1767558103191
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Breakfast Recommendations
+        meta:
+          id: fld_1b9345556eca40569661cd95ad83cd1b
+          created: 1767558103197
+          modified: 1767559810518
+          sortKey: -1767559774684
+          description: Nationality-specific breakfast item suggestions
+        children:
+          - url: http://localhost:8000/recommendations/breakfast/FRA
+            name: Breakfast - French
+            meta:
+              id: req_161929c331b74fcf8beb3beee24c17ea
+              created: 1767558103202
+              modified: 1767558103202
+              isPrivate: false
+              description: "French preferences: high bread & dairy"
+              sortKey: -1767558103202
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/recommendations/breakfast/DEU
+            name: Breakfast - German
+            meta:
+              id: req_6ffad6cf778c42ac98df183bf869f12c
+              created: 1767558103207
+              modified: 1767558103207
+              isPrivate: false
+              description: "German preferences: highest bread preference"
+              sortKey: -1767558103207
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/recommendations/breakfast/TUN
+            name: Breakfast - Tunisian
+            meta:
+              id: req_8fa50d8722b4407db139f43e058e89b3
+              created: 1767558103301
+              modified: 1767558103301
+              isPrivate: false
+              description: "Tunisian preferences: high spice, lower dairy"
+              sortKey: -1767558103301
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/recommendations/breakfast/ITA
+            name: Breakfast - Italian
+            meta:
+              id: req_bf87df87907546a7aace9221f1049160
+              created: 1767558103305
+              modified: 1767558103305
+              isPrivate: false
+              description: Italian Mediterranean breakfast style
+              sortKey: -1767558103305
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/recommendations/breakfast/GBR
+            name: Breakfast - British
+            meta:
+              id: req_a0c2a45017a5450faef1265bfa50a7db
+              created: 1767558103308
+              modified: 1767558103308
+              isPrivate: false
+              description: British Full English breakfast style
+              sortKey: -1767558103308
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Explainable AI
+        meta:
+          id: fld_3fa8de85c450487ab6ba8898dabd7435
+          created: 1767558103313
+          modified: 1767559807293
+          sortKey: -1767559774784
+          description: Understand HOW and WHY predictions are made
+        children:
+          - url: http://localhost:8000/forecast/explain/1?occupancy=15&nationality_code=FRA
+            name: Explain Forecast - Tabouna Bread (French)
+            meta:
+              id: req_0bbf6dbea4c94f7dad1d626ce555db53
+              created: 1767558103317
+              modified: 1767558103317
+              isPrivate: false
+              description: Shows calculation breakdown for bread forecast
+              sortKey: -1767558103317
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/forecast/explain/8?occupancy=15&nationality_code=DEU
+            name: Explain Forecast - Yogurt (German)
+            meta:
+              id: req_5adac026620c484ba8621694bc311d28
+              created: 1767558103321
+              modified: 1767558103321
+              isPrivate: false
+              description: German dairy preferences affect yogurt demand
+              sortKey: -1767558103321
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/forecast/explain/12?occupancy=15&nationality_code=TUN
+            name: Explain Forecast - Harissa (Tunisian)
+            meta:
+              id: req_275dea6cd0904af58be03c5bacd66177
+              created: 1767558103323
+              modified: 1767558103323
+              isPrivate: false
+              description: High spice tolerance increases harissa demand
+              sortKey: -1767558103323
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/menu/justify/3
+            name: Justify Dish - Tabouna Traditional
+            meta:
+              id: req_259b352c08f543ecb378ec40489ca35b
+              created: 1767558103325
+              modified: 1767558103325
+              isPrivate: false
+              description: Why Tabouna with Olive Oil & Harissa is recommended
+              sortKey: -1767558103325
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8000/menu/justify/1
+            name: Justify Dish - Malsouka with Eggs
+            meta:
+              id: req_20cf62ec5f504875b359646909793d9e
+              created: 1767558103327
+              modified: 1768060144189
+              isPrivate: false
+              description: Why Malsouka traditional dish is recommended
+              sortKey: -1767558103327
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_905ad2d4c96860a3afa21cf5e340e063e1b8ba2c
+    created: 1767437736264
+    modified: 1767437736264
+environments:
+  name: Base Environment
+  meta:
+    id: env_905ad2d4c96860a3afa21cf5e340e063e1b8ba2c
+    created: 1767437736260
+    modified: 1767437810644
+    isPrivate: false
+  data:
+    base_url: http://localhost:8000
+    auth_url: http://localhost:8001
