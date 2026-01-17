@@ -1,0 +1,22 @@
+services:
+  # 1. Auth Server
+  auth-server:
+    build: ./auth-server
+    container_name: terroir_auth
+    ports:
+      - "8001:8000"  # <--- YOUR COMPUTER (8001) : CONTAINER (8000)
+    env_file:
+      - .env
+    volumes:
+      - ./auth-server/data:/app/data
+    restart: always
+
+  # 2. API Server
+  api-server:
+    build: ./api-server
+    container_name: terroir_api
+    ports:
+      - "8000:8000"  # <--- YOUR COMPUTER (8000) : CONTAINER (8000)
+    volumes:
+      - ./api-server/data:/app/data
+    restart: always
